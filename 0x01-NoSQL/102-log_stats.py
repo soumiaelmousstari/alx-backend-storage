@@ -22,7 +22,7 @@ def print_log_stats():
     print(f"\tmethod POST: {POST}")
     print(f"\tmethod PUT: {PUT}")
     print(f"\tmethod PATCH: {PATCH}")
-    print(f"\tmethod DELETE: DELETE}")
+    print(f"\tmethod DELETE: {DELETE}")
     print(f"{PATH} status chek")
     print("IPs:")
     sort = client.logs.nginx.aggregate(
@@ -33,7 +33,7 @@ def print_log_stats():
         if j == 10:
             break
         print(f"\t{s.get('_id')}: {s.get('count')}")
-        j++
+        j += 1
 
 
 if __name__ == "__main__":
