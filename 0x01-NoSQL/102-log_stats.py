@@ -37,4 +37,4 @@ def print_log_stats():
 
 
 if __name__ == "__main__":
-    printf_log_stats()
+    print_log_stats()
