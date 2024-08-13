@@ -19,9 +19,9 @@ def print_log_stats():
     print(f"\tmethod POST: {POST}")
     print(f"\tmethod PUT: {PUT}")
     print(f"\tmethod PATCH: {PATCH}")
-    print(f"\tmethod DELETE: DELETE}")
+    print(f"\tmethod DELETE: {DELETE}")
     print(f"{PATH} status chek")
 
 
 if __name__ == "__main__":
-    printf_log_stats()
+    print_log_stats()
